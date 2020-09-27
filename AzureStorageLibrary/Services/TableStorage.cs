@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AzureStorageLibrary.Services
 {
-    class TableStorage<TEntity> : INoSqlStorage<TEntity> where TEntity : TableEntity, new()
+    public class TableStorage<TEntity> : INoSqlStorage<TEntity> where TEntity : TableEntity, new()
     {
         // Azure table-lerde ishler gormek uchun
         private readonly CloudTableClient _cloudTableClient;

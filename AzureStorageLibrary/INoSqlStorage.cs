@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AzureStorageLibrary
 {
-    interface INoSqlStorage<TEntity>
+    public interface INoSqlStorage<TEntity>
     {
         Task<TEntity> Add(TEntity entity);
 
