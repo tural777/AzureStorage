@@ -8,17 +8,19 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MvcWebApp.Controllers
 {
-    public class AzureStoragesController : Controller
+    public class TableStoragesController : Controller
     {
         private readonly INoSqlStorage<Product> _noSqlStorage;
 
-        public AzureStoragesController(INoSqlStorage<Product> noSqlStorage)
+        public TableStoragesController(INoSqlStorage<Product> noSqlStorage)
         {
             _noSqlStorage = noSqlStorage;
+
         }
 
         public IActionResult Index()
         {
+            ViewBag.products = _noSqlStorage.All().ToList();
             return View();
         }
     }

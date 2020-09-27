@@ -1,0 +1,28 @@
+﻿
+<h2>Products</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>RowKey</th>
+        <th>PartitionKey</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Timestamp</th>
+        <th>Stock</th>
+        <th>Color</th>
+    </tr>
+
+    @foreach (var item in ViewBag.products as List<Product>)
+    {
+        <tr>
+            <td>@item.RowKey</td>
+            <td>@item.PartitionKey</td>
+            <td>@item.Name</td>
+            <td>@item.Price</td>
+            <td>@item.Timestamp</td>
+            <td>@item.Color</td>
+            <td>@item.Color</td>
+        </tr>
+    }
+
+</table>
