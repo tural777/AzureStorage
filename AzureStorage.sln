@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureStorageLibrary", "AzureStorageLibrary\AzureStorageLibrary.csproj", "{8D46F521-C0DB-45DB-BC9D-EB39FC6B4E92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWebApp", "MvcWebApp\MvcWebApp.csproj", "{D6A4EA36-2B97-47E1-9877-CF57F487EAD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcWebApp", "MvcWebApp\MvcWebApp.csproj", "{D6A4EA36-2B97-47E1-9877-CF57F487EAD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueConsoleApp", "QueueConsoleApp\QueueConsoleApp.csproj", "{55DD19BE-9748-4AF0-BDDB-80D58DE599E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D6A4EA36-2B97-47E1-9877-CF57F487EAD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6A4EA36-2B97-47E1-9877-CF57F487EAD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6A4EA36-2B97-47E1-9877-CF57F487EAD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55DD19BE-9748-4AF0-BDDB-80D58DE599E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55DD19BE-9748-4AF0-BDDB-80D58DE599E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55DD19BE-9748-4AF0-BDDB-80D58DE599E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55DD19BE-9748-4AF0-BDDB-80D58DE599E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -29,6 +29,7 @@ namespace MvcWebApp.Controllers
             // appendBlob Microsoft Azure Storage Explorer ile ishlemir, 
             // ancaq online qoshulanda loglama ishlarmizi ede bilerik.
             // kod hazirdi, sadece kommentleri silmek lazimdi.
+
             //ViewBag.logs = await _blobStorage.GetLogAsync("controller.txt");
             return View();
         }
