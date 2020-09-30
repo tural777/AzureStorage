@@ -29,6 +29,8 @@ namespace MvcWebApp
                 .GetSection("AzureConnectionStrings")["StorageConStr"];
 
             services.AddScoped(typeof(INoSqlStorage<>), typeof(TableStorage<>));
+            services.AddSingleton<IBlobStorage, BlobStorage>();
+
             services.AddControllersWithViews();
         }
 
